@@ -177,7 +177,6 @@
           noPlayer = false;
         }
         if(r >= matrix.length-1) break;
-        console.log("c: ", c, "r :", r )
         r++;
       }
 
@@ -187,7 +186,6 @@
     // test if any minor diagonals on this board contain conflicts
     hasAnyMinorDiagonalConflicts: function() {
       var startingIndex = this.rows().length * 2;
-      console.log( this.rows() );
       for( var i = startingIndex; i > 0; i-- ) {
         // console.log( "Starting Index For func At: ", i );
         if( this.hasMinorDiagonalConflictAt(i) ) return true;
